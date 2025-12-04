@@ -177,7 +177,7 @@ body {
     line-height: 1.5;
 }
 
-/* =========== AD BOX =========== */
+/* =========== AD BOX (HOME PAGE) =========== */
 
 .ad-box {
     margin-top: 30px;
@@ -201,6 +201,57 @@ body {
     padding-top: 12px;
 }
 
+/* =========== CONTACT FORM EXTRA STYLING =========== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 6px;
+}
+
+.contact-form label {
+    font-size: 13px;
+    color: #e5e7eb;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(148,163,184,0.8);
+    background: rgba(15,23,42,0.9);
+    color: #e5e7eb;
+    font-size: 13px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px rgba(56,189,248,0.5);
+}
+
+.contact-btn {
+    margin-top: 10px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #0b1120;
+    box-shadow: 0 10px 22px rgba(22,163,74,0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.1s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(22,163,74,0.7);
+    opacity: 0.96;
+}
+
 /* =========== MOBILE =========== */
 
 @media (max-width: 768px) {
@@ -209,5 +260,8 @@ body {
     }
     .hero-right {
         order: -1; /* card upar aa jayega mobile me */
+    }
+    .brand-text h1 {
+        font-size: 22px;
     }
 }
